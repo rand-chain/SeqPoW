@@ -1,1 +1,1 @@
-# Sequential-of-Work
+# SeqPoW
