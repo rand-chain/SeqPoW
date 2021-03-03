@@ -1,1 +1,1 @@
-# SeqPow-demo
+# Sequential-of-Work
