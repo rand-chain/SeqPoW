@@ -1,0 +1,50 @@
+# built on top of https://github.com/eupn/vdf-rs
+[package]
+name = "seq_pow"
+description = "A crate with Sequential Proof-of-Work (SeqPoW)"
+version = "0.0.1"
+edition = "2018"
+authors = ["Eugene P. <eupn@protonmail.com>", "Haoyu LIN <haoyu@protonmail.com>", "Runchao HAN <runchao.han@monash.edu>"]
+
+[dependencies]
+rug = "1.2.1"
+sha2 = "0.9.1"
+elapsed = "0.1.2"
+ecvrf = "0.4.0"
+
+[dev-dependencies]
+criterion = ">=0.2"
+
+[[bin]]
+name = "seqpow_sloth"
+path = "examples/sloth.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "seqpow_wes19"
+path = "examples/wes19.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "seqpow_pie19"
+path = "examples/pie19.rs"
+test = false
+bench = false
+
+
+[[bench]]
+name = "bench-sloth"
+path = "benches/bench_sloth.rs"
+harness = false
+
+[[bench]]
+name = "bench-wes19"
+path = "benches/bench_wes19.rs"
+harness = false
+
+[[bench]]
+name = "bench-pie19"
+path = "benches/bench_pie19.rs"
+harness = false
